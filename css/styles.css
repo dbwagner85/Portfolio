@@ -1,0 +1,156 @@
+.site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
+    background: #343D46;
+}
+
+
+/*******************************************
+HEADER
+*******************************************/
+
+.head {
+    grid-column: 1/3;
+    grid-row: 1;
+    padding: 0px 16px;
+}
+
+.head h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 5vw;
+    color: white;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 0;
+}
+
+/*******************************************
+NAVIGATION
+*******************************************/
+.main-nav {
+  display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #343D46;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 4vw;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: #343D46;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #343D46;
+    color: white;
+  }
+  
+  .active {
+    background-color: #343D46;
+    color: white;
+    visibility: hidden;
+  }
+
+/*******************************************
+PROJECTS
+*******************************************/
+
+.project1 {
+    background: #4F5B66;
+    grid-column: 1/3;
+    grid-row: 3;
+    border: 2px solid #FFFFFF;
+}
+
+.vc2 {
+  display: none;
+}
+
+.project2 {
+    background: #4F5B66;
+    grid-column: 1/3;
+    grid-row: 4;
+    border: 2px solid #FFFFFF;
+}
+
+.pcg2 {
+  display: none;
+}
+
+.project3 {
+    background: #4F5B66;
+    grid-column: 1/3;
+    grid-row: 5;
+    border: 2px solid #FFFFFF;
+}
+
+.bc2 {
+  display: none;
+}
+
+.project4 {
+    background: #4F5B66;
+    grid-column: 1/3;
+    grid-row: 6;
+    border: 2px solid #FFFFFF;
+}
+
+.dw2 {
+  display: none;
+}
+
+div img {
+    width: 85%;
+    border: solid 5px black;
+    border-radius: 10px;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+div {
+    text-align: center;
+}
+
+/*******************************************
+FOOTER
+*******************************************/
+
+.footer {
+    background-color: #4F5B66;
+    grid-column: 1/3;
+    grid-row: 7;
+    justify-content: space-evenly;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    justify-items: center;
+    padding-top: 5px;
+}
+
+.footer img {
+  padding: .5em;
+}
